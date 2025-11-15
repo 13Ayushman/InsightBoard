@@ -1,0 +1,34 @@
+## 🧠 System Architecture
+
+The InsightBoard automation flow is designed to be simple, fast, and fully no-code.
+
+User (Chrome Extension)
+        ↓
+ Make.com Webhook (Triggers Scenario)
+        ↓
+     Groq API (AI Summary Generation)
+        ↓
+     Airtable (Stores Title, Summary, Source, Date)
+        ↓
+ InsightBoard Dashboard (Reads from Airtable)
+
+### Flow Breakdown:
+
+1. **Chrome Extension**
+   - Captures title/topic from any webpage.
+   - Sends POST request → Make.com Webhook.
+
+2. **Make Scenario**
+   - Receives data.
+   - Sends Title to **Groq API** to generate summary.
+   - Creates new Airtable record.
+
+3. **Groq AI**
+   - Summarizes the research topic in 3–5 sentences.
+
+4. **Airtable**
+   - Stores: `Title`, `Summary`, `Source`, `Date`.
+   - Becomes the backend database for InsightBoard.
+
+5. **(Optional) Framer / UI**
+   - Basic web dashboard consuming Airtable view.
