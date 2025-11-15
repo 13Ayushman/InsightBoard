@@ -1,0 +1,25 @@
+## 🚀 Installation & Setup
+
+Follow these steps to install and use the InsightBoard Chrome Extension:
+
+### 1. Download the Project ZIP
+- Click the green **Code** button → **Download ZIP**
+- Extract the folder to your computer.
+
+### 2. Load the Extension in Chrome
+1. Open Chrome and go to: `chrome://extensions/`
+2. Enable **Developer Mode** (top right).
+3. Click **Load unpacked**.
+4. Select the folder named `InsightBoard_Extension`.
+5. The extension is now installed and will appear in your toolbar.
+
+### 3. How to Use
+1. Navigate to any webpage on the Perplexity Comet browser.
+2. Highlight or select the topic/title you want to save.
+3. Open the extension → click **Save to InsightBoard**.
+4. The data is instantly sent to:
+   - ➝ **Make.com Webhook**
+   - ➝ **Processed by Groq (AI Summary)**
+   - ➝ **Stored in Airtable**
+
+That’s it — your research topic is saved, summarized, and organized automatically.
